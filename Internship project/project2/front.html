@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container" id="change" style="background-color: aliceblue;">
+        <form id="calculate_1" onsubmit="calculate();return false">
+            <label for="temparature"><h2>Enter temparture to convert:</h2></label><br>
+            <input type="number" name="temparature" id="temparature" placeholder="Enter temp to convert:">
+
+            <select name="temp_change" id="temp_change">
+                <option value="degree_celcius">Degree_celcius</option>
+                <option value="degree_farenhit">Degree_farenhit</option>
+            </select>
+
+            <button type="submit" name="Converter" id="submit">Converter</button><br>
+            <span id="Final_result" style="font-size: 50px;"></span>
+
+
+        </form> 
+    
+    </div>   
+    
+    <script src="conver.js"></script>
+</body>
+</html>
